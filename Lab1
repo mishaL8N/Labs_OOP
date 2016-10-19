@@ -1,0 +1,40 @@
+package com.company;
+
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your time: ");
+            String Time = scanner.nextLine();
+        System.out.println("Enter gtm: ");
+         int gmt = scanner.nextInt();
+            int EnterTime = Integer.parseInt(Time.substring(0,2));
+        EnterTime=EnterTime+gmt;
+        if(Time.length()==5 || EnterTime>=24){
+            EnterTime%=24;
+            if(EnterTime>10){
+                System.out.print(EnterTime+":"+Time.substring(3,5));
+            }
+            else{
+                System.out.print("0"+EnterTime+":"+Time.substring(3,5));
+            }
+        }
+        else if(Time.length()>5){
+            if ( EnterTime>=12 & Time.charAt(6)=='a'){
+                EnterTime%=12;
+                Time = Time.replace('a', 'p');
+            }
+            else {
+                EnterTime%=12;
+                Time = Time.replace('p', 'a');
+            }
+            if (EnterTime>9){
+                System.out.print(EnterTime+":"+Time.substring(3,5)+" "+Time.substring(6, 8));
+            }
+            else {
+                System.out.print("0"+EnterTime+":"+Time.substring(3,5)+" "+Time.substring(6, 8));
+            }
+        }
+    }
+}
