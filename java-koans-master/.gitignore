@@ -1,0 +1,24 @@
+*.class
+*/bin/*
+.metadata
+bin/*
+lib/build/bin/*
+lib/build/reports/*
+koans/data
+koans/data*
+.classpath
+.project
+.settings
+koans/app/data
+lib/file-compiler/bin
+*.~*
+
+# Maven build artifacts should not be committed #
+target
+*/target
+
+.gradle
+*.iml
+*.ipr
+*.iws
+.idea
