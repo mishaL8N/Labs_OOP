@@ -14,7 +14,6 @@ public class BasicClass {
             System.out.println("1 - ВВЕСТИ ВЕРШИНУ");
             System.out.println("2 - ВВЕСТИ ЗВ'ЯЗОК");
             System.out.println("3 - ВИВЕСТИ ГРАФ");
-            System.out.println("4 - ЗНАЙТИ ВЕРШИНУ ПО ID");
             System.out.println("5 - ВИЙТИ");
             int k = scan.nextInt();
             if(k==1){System.out.println("Введіть вершину");
