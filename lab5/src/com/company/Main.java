@@ -3,7 +3,6 @@ package com.company;
 import java.util.*;
 
 public  class Main<T> /*implements Rebro<T>*/ {
-    public String ver1, ver2;
     Scanner scan = new Scanner(System.in);
 
     public static HashMap<String, List<String>> graph = new HashMap<String, List<String>>();

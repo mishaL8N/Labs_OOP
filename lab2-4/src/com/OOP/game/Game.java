@@ -13,7 +13,7 @@ public class Game {
         long start = System.currentTimeMillis();
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-               JFrame frame  = new JFrame("Java   TTT");
+               JFrame frame  = new JFrame("Java TicTayToe");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setLayout(new GridLayout(3,3));
                 final Game game = new Game();
